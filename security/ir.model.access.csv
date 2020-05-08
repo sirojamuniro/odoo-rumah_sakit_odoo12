@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ini_tes,access.ini_tes,model_ini_tes,,1,1,1,1
+access_ini_relet,access.ini_relet,model_ini_relet,,1,1,1,1
+access_ini_dokter,access.ini.dokter,model_ini_dokter,,1,1,1,1
+access_ini_relet_lines,access.ini.relet.lines,model_ini_relet_lines,,1,1,1,1
+access_create_relet,access.create.relet,model_create_relet,,1,1,1,1

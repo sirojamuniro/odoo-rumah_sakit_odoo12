@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="report_patient_card"
+        model="ini.tes"
+        string="Kartu Pasien"
+        report_type="qweb-pdf"
+        menu="True"
+        name="gosantha_latihan2.report_patient"
+        file="gosantha_latihan2.report_patient"
+    />
+      <!--jika ditambahkan menu="False" maka report pdf akan hilang-->
+</odoo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- tree view of doctor -->
+        <record id="action_doctor_tree" model="ir.ui.view">
+            <field name="name">ini.dokter.tree</field>
+            <field name="model">ini.dokter</field>
+            <field name="arch" type="xml">
+                <tree string="Dokter">
+                    <field name="name" />
+                    <field name="gender" />
+                </tree>
+            </field>
+        </record>
+        <!-- form view of doctor -->
+        <record id="action_doctor_form" model="ir.ui.view">
+            <field name="name">ini.dokter.form</field>
+            <field name="model">ini.dokter</field>
+            <field name="arch" type="xml">
+                <form string="Pasien">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" />
+                            </group>
+                            <group>
+                                <field name="gender" />
+                                <field name="user_id" options="{'no_create_edit': True, 'no_create': True, 'no_open': True}" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- action of doctor -->
+        <record id="action_dokter" model="ir.actions.act_window">
+            <field name="name">Dokter</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ini.dokter</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Buat Baru
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Dokter" id="home_dokter" parent="Home_id" action="action_dokter"/>
+
+    </data>
+</odoo>
